@@ -10,7 +10,7 @@ _コミットできました。いい調子です！ :sparkles:_
 
 コミット後に、最近のブランチへの push を知らせるメッセージと **Compare & pull request** ボタンが表示されたことに気づいたかもしれません。
 
-![メッセージとボタンのスクリーンショット](../images/compare-pull-request-button.png)
+![メッセージとボタンのスクリーンショット](https://raw.githubusercontent.com/tsato-cnlab/introduction-to-github/main/.github/images/compare-pull-request-button.png)
 
 自動的にプルリクエストを作成するには、**Compare & pull request** ボタンをクリックし、下のステップ 5 に進んでください。手動で作成する練習をしたい場合は、最初の 4 ステップを使います。
 
@@ -21,7 +21,7 @@ _コミットできました。いい調子です！ :sparkles:_
    - **base:** `main`
    - **compare:** `my-first-branch`
 
-   ![両方のブランチ選択を示すスクリーンショット](../images/branch-selection-comparison.png)
+   ![両方のブランチ選択を示すスクリーンショット](https://raw.githubusercontent.com/tsato-cnlab/introduction-to-github/main/.github/images/branch-selection-comparison.png)
 
 4. **Create pull request** をクリックします。
 
@@ -29,7 +29,7 @@ _コミットできました。いい調子です！ :sparkles:_
 
 6. 次のフィールドでは、行った変更の **description** を入力できます。ここまでに達成したことを短く説明してください。念のため振り返ると、あなたは新しいブランチを作成し、ファイルを作成し、コミットしました。
 
-   ![プルリクエストを示すスクリーンショット](../images/create-pull-request-form.png)
+   ![プルリクエストを示すスクリーンショット](https://raw.githubusercontent.com/tsato-cnlab/introduction-to-github/main/.github/images/create-pull-request-form.png)
 
 7. **Create pull request** をクリックします。
 
