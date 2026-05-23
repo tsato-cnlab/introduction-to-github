@@ -1,61 +1,50 @@
-## Step 1: Create a branch
+## ステップ 1: ブランチを作成する
 
-_Welcome to "Introduction to GitHub"! :wave:_
+_「GitHub 入門」へようこそ！ :wave:_
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning.
-GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
+**GitHub とは？**: GitHub は、バージョン管理に _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ を使う共同作業プラットフォームです。GitHub は、[オープンソース](https://docs.github.com/get-started/quickstart/github-glossary#open-source) ソフトウェアを共有したり、コントリビュートしたりする場として広く使われています。
 
-:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+:tv: [動画: GitHub とは？](https://www.youtube.com/watch?v=pBy1zgt0XPc)
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders.
-A repository tracks versions of files and folders. For more information, see
-"[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
+**リポジトリとは？**: _[リポジトリ](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ は、ファイルやフォルダーを含むプロジェクトです。リポジトリはファイルやフォルダーのバージョンを追跡します。詳しくは GitHub Docs の「[リポジトリについて](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)」を参照してください。
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository.
-By default, your repository has one branch named `main` and it is considered to be the definitive branch.
-Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project.
-Many people use branches to work on specific features without affecting any other parts of the project.
+**ブランチとは？**: _[ブランチ](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ は、リポジトリの並行バージョンです。既定では、リポジトリには `main` という名前のブランチが 1 つあり、これが基準となるブランチです。追加のブランチを作成すると、リポジトリの `main` ブランチをコピーして、メインのプロジェクトに影響を与えずに安全に変更できます。多くの人は、プロジェクトの他の部分に影響を与えずに特定の機能を作業するためにブランチを使います。
 
-Branches allow you to separate your work from the `main` branch.
-In other words, everyone's work is safe while you contribute.
-For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
+ブランチを使うと、自分の作業を `main` ブランチから切り離せます。つまり、あなたがコントリビュートしている間も、全員の作業を安全に保てます。詳しくは「[ブランチについて](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)」を参照してください。
 
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_
-is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com.
-GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+**プロフィール README とは？**: _[プロフィール README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ は、GitHub.com のコミュニティに向けて自分の情報を共有できる、GitHub プロフィール上の「自己紹介」セクションのようなものです。GitHub はプロフィール README をプロフィールページの上部に表示します。詳しくは「[プロフィール README の管理](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)」を参照してください。
 
-![screenshot showing an example profile readme](../images/example-profile-readme.png)
+![プロフィール README の例を示すスクリーンショット](../images/example-profile-readme.png)
 
-### :keyboard: Activity: Your first branch
+### :keyboard: アクティビティ: 最初のブランチ
 
-1. Open a new browser tab and navigate to your newly made repository (your copy of this exercise). Then, work on the steps in your second tab while you read the instructions in this tab.
+1. 新しいブラウザータブを開き、作成したばかりのリポジトリ（この演習のコピー）に移動します。このタブで手順を読みながら、2 つ目のタブで作業してください。
 
-2. Navigate to the **< > Code** tab in the header menu of your repository.
+2. リポジトリのヘッダーメニューにある **< > Code** タブに移動します。
 
-   ![screenshot highlighting the code tab](../images/code-tab-highlight.png)
+   ![Code タブを強調表示したスクリーンショット](../images/code-tab-highlight.png)
 
-3. Click on the **main** branch drop-down.
+3. **main** ブランチのドロップダウンをクリックします。
 
-   <img width="300" alt="screenshot highlighting the branch selection" src="../images/branch-selection-dropdown.png">
+   <img width="300" alt="ブランチ選択を強調表示したスクリーンショット" src="../images/branch-selection-dropdown.png">
 
-4. In the text box **Find or create a branch...**, enter `my-first-branch`.
+4. **Find or create a branch...** のテキストボックスに `my-first-branch` と入力します。
    
-   > **Note:** This is checked to continue with the next step. :wink: 
+   > **メモ:** 次のステップに進むため、この名前がチェックされます。 :wink:
 
-5. Click the text **Create branch: `my-first-branch` from main** to create your branch.
+5. **Create branch: `my-first-branch` from main** というテキストをクリックして、ブランチを作成します。
 
-   <img width="300" alt="screenshot highlighting the create branch prompt" src="../images/create-branch-prompt.png">
+   <img width="300" alt="ブランチ作成プロンプトを強調表示したスクリーンショット" src="../images/create-branch-prompt.png">
 
-   - The branch will automatically switch to the one you just created.
-   - The **main** branch drop-down menu will display your new branch name.
+   - ブランチは、作成したばかりのブランチに自動で切り替わります。
+   - **main** ブランチのドロップダウンメニューには、新しいブランチ名が表示されます。
 
-6. Now that your branch is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
-
+6. ブランチが GitHub にプッシュされたので、Mona があなたの作業を確認しているはずです。少し待って、コメント欄を見ていてください。進捗情報と次のレッスンが Mona から届きます。
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>うまくいきませんか？</summary><br/>
 
-If you don't get feedback, here are some things to check:
-- Make sure your created the branch with the exact name `my-first-branch`. No prefixes or suffixes.
+フィードバックが届かない場合は、次を確認してください。
+- ブランチ名が正確に `my-first-branch` になっていることを確認してください。接頭辞や接尾辞は付けないでください。
 
 </details>

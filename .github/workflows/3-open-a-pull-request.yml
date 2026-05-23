@@ -1,9 +1,9 @@
-name: Step 3 # Open a pull request
+name: Step 3 # プルリクエストを開く
 
-# Checks if the learner completed tasks for step 3.
-# - Triggers when the user creates or edits the pull request.
-# - Checks the pull request title and description. Adds a PR comment.
-# - If all checks pass, the workflow is disabled so it doesn't run again. As such, workflow status badge will change to green.
+# 学習者がステップ 3 のタスクを完了したか確認する。
+# - ユーザーがプルリクエストを作成または編集したときに実行される。
+# - プルリクエストのタイトルと説明を確認し、PR コメントを追加する。
+# - すべてのチェックに合格すると、再実行されないよう workflow を無効化する。そのため、workflow status badge は緑色に変わる。
 
 on:
   pull_request:
@@ -83,9 +83,9 @@ jobs:
         continue-on-error: true
         run: |
           if [ -n "$PR_BODY" ]; then
-            echo "STEP_MESSAGE=Pull request description" >> $GITHUB_OUTPUT
+            echo "STEP_MESSAGE=プルリクエストの説明" >> $GITHUB_OUTPUT
           else
-            echo "STEP_MESSAGE=Pull request description is empty" >> $GITHUB_OUTPUT
+            echo "STEP_MESSAGE=プルリクエストの説明が空です" >> $GITHUB_OUTPUT
             exit 1
           fi
         env:
@@ -102,7 +102,7 @@ jobs:
           vars: |
             step_number: 3
             results_table:
-              - description: "Pull Request title matches"
+              - description: "プルリクエストのタイトルが一致している"
                 passed: ${{ steps.check-pr-title.outcome == 'success' }}
               - description: ${{ steps.check-pr-description.outputs.STEP_MESSAGE }}
                 passed: ${{ steps.check-pr-description.outcome == 'success' }}

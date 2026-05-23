@@ -1,4 +1,4 @@
-name: Step 0 # Start Exercise
+name: Step 0 # 演習を開始
 
 on:
   push:
@@ -6,9 +6,9 @@ on:
       - main
 
 permissions:
-  contents: write # Update Readme
-  actions: write # Disable/enable workflows
-  issues: write # Create issue and comment on issues
+  contents: write # README を更新
+  actions: write # workflow を無効化/有効化
+  issues: write # issue を作成し、issue にコメントする
 
 env:
   STEP_1_FILE: ".github/steps/1-create-a-branch.md"
@@ -20,8 +20,8 @@ jobs:
     name: Start Exercise
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.1
     with:
-      exercise-title: "Introduction to GitHub"
-      intro-message: "If you are new to GitHub, you might find your fellow developers use ___**issues**___  to organize their work and collaborate. We will do the same! That's another lesson, but today, we will introduce you to the basics."
+      exercise-title: "GitHub 入門"
+      intro-message: "GitHub を初めて使う場合、他の開発者が作業の整理や共同作業に ___**issues**___ を使っていることに気づくかもしれません。ここでも同じことをします。詳しくは別のレッスンで扱いますが、今日は基本を紹介します。"
 
   post_next_step_content:
     name: Post next step content

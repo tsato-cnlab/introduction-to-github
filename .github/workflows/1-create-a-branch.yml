@@ -1,9 +1,9 @@
-name: Step 1 # Create a branch
+name: Step 1 # ブランチを作成
 
-# Checks if the learner completed tasks for step 1.
-# - Triggers when the user creates a new branch 'my-first-branch'.
-# - Checks that the branch name is 'my-first-branch'.
-# - If all checks pass, the workflow is disabled so it doesn't run again. As such, workflow status badge will change to green.
+# 学習者がステップ 1 のタスクを完了したか確認する。
+# - ユーザーが新しいブランチ 'my-first-branch' を作成したときに実行される。
+# - ブランチ名が 'my-first-branch' であることを確認する。
+# - すべてのチェックに合格すると、再実行されないよう workflow を無効化する。そのため、workflow status badge は緑色に変わる。
 
 on:
   push:

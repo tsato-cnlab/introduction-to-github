@@ -1,8 +1,8 @@
-name: Step 4 # Merge your pull request
+name: Step 4 # プルリクエストをマージ
 
-# Checks if the learner completed tasks for step 4.
-# - Triggers when the user merges the pull request.
-# - If all checks pass, the workflow is disabled so it doesn't run again. As such, workflow status badge will change to green.
+# 学習者がステップ 4 のタスクを完了したか確認する。
+# - ユーザーがプルリクエストをマージしたときに実行される。
+# - すべてのチェックに合格すると、再実行されないよう workflow を無効化する。そのため、workflow status badge は緑色に変わる。
 
 on:
   pull_request:
@@ -70,4 +70,4 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/finish-exercise.yml@v0.7.0
     with:
       issue-url: ${{ needs.find_exercise.outputs.issue-url }}
-      exercise-title: "Introduction to GitHub"
+      exercise-title: "GitHub 入門"
