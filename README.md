@@ -23,7 +23,7 @@ _1 時間以内で GitHub の使い方を始めましょう。_
 
 演習を自分のアカウントにコピーします。その後、お気に入りの Octocat である Mona が最初のレッスンを準備するまで **約 20 秒** 待ち、**ページを再読み込み** してください。
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=Exercise:+Introduction+to+GitHub&visibility=public)
+[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=tsato-cnlab&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github-ja&description=Exercise:+GitHub+%E5%85%A5%E9%96%80&visibility=public)
 
 <details>
 <summary>うまくいきませんか？</summary><br/>
