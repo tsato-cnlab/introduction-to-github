@@ -30,6 +30,8 @@ jobs:
       github.head_ref == 'my-first-branch'
     name: Find Exercise Issue
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
+    with:
+      issue-title-text: "GitHub 入門"
 
   check_step_work:
     name: Check step work
