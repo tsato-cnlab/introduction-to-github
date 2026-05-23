@@ -18,7 +18,7 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.1
+    uses: ./.github/workflows/ja-start-exercise.yml
     with:
       exercise-title: "GitHub 入門"
       intro-message: "GitHub を初めて使う場合、他の開発者が作業の整理や共同作業に ___**issues**___ を使っていることに気づくかもしれません。ここでも同じことをします。詳しくは別のレッスンで扱いますが、今日は基本を紹介します。"
@@ -37,13 +37,6 @@ jobs:
         with:
           ref: main
 
-      - name: Get response templates
-        uses: actions/checkout@v4
-        with:
-          repository: skills/exercise-toolkit
-          path: exercise-toolkit
-          ref: v0.7.0
-
       - name: Create comment - add step content
         uses: GrantBirki/comment@v2.1.1
         with:
@@ -56,7 +49,7 @@ jobs:
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
           issue-number: ${{ env.ISSUE_NUMBER }}
-          file: exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
+          file: .github/ja-templates/step-feedback/watching-for-progress.md
 
       - name: Disable current workflow and enable next one
         run: |
